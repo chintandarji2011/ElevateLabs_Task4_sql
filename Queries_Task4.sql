@@ -1,4 +1,4 @@
--- retrive table
+-- Retrive 'sales'table
 
 SELECT * FROM sales;
 
@@ -37,4 +37,4 @@ SELECT category, SUM(qty_sold * price_per_unit) AS total_sale
 FROM sales
 GROUP BY category
 HAVING SUM(qty_sold * price_per_unit) > 100000
-*/ -----for pgAdmin4 and SQL server need to use this query becuase HAVING cluase run first before SELECT clause
+*/ -----for pgAdmin4 and SQL server need to use this query becuase HAVING clause run first before SELECT clause
